@@ -27,6 +27,8 @@ Every practical experiment folder is self-contained with its source code (`HTML5
 | **05** | **Shopping Cart Calculator** | Higher-Order Array Functions (`map`, `filter`, `reduce`, `forEach`), Tiered Discounts | **Student Marks Management System** (`push`, `pop`, `shift`, `unshift`, `splice`, `slice`) | [View EXP5 README](EXP5/README.md) |
 | **06** | **Authentication Portal & Email Verification** | Multi-Step Stepper UI, Simulated OTP Delivery, RegExp Email Verification, `localStorage` DB | **Student Information Extraction System** (Regex Capture Groups, Replacement) | [View EXP6 README](EXP6/README.md) |
 | **07** | **Dynamic Interactive To-Do List** | DOM Node Creation & Deletion (`createElement`, `remove`), Inline Prompts | **Comprehensive Registration Form** (`focus`, `change`, `submit` Event Handlers) | [View EXP7 README](EXP7/README.md) |
+| **08** | **Gym Admission Form & Product Filter** | Interactive Real-Time Validation (`input`, `blur`, `change`, `submit`), RegExp Patterns | **E-Commerce Product Filter** (Array Filtering, Dynamic Card Grid, Search Sanitization) | [View EXP8 README](EXP8/README.md) |
+| **09** | **Theme-Responsive Admission Portal** | Web Storage API (`localStorage`, `sessionStorage`), Persistent Dark Mode, FOUC Prevention, Draft Auto-Save | **Seminar Schedule Planner** (HTML Table Spans, Dynamic Topic Selection, Storage Reset) | [View EXP9 README](EXP9/README.md) |
 
 ---
 
@@ -36,10 +38,10 @@ Every practical experiment folder is self-contained with its source code (`HTML5
 - **Scripting Language:** Modern JavaScript (ES6+)
 - **Core APIs & Features:**
   - Dynamic DOM Manipulation (`document.createElement`, `appendChild`, `remove`, `innerHTML`)
-  - Event-Driven Programming (`addEventListener` for `click`, `input`, `change`, `focus`, `submit`)
+  - Event-Driven Programming (`addEventListener` for `click`, `input`, `change`, `focus`, `blur`, `submit`)
   - Regular Expressions (`RegExp` syntax, pattern matching, sanitization)
   - Higher-Order Array Iterators (`map`, `filter`, `reduce`, `forEach`)
-  - Web Storage API (`localStorage`)
+  - Web Storage API (`localStorage` & `sessionStorage` for persistent and session-scoped state)
 - **Development Environment:** Visual Studio Code / Antigravity IDE
 - **Version Control:** Git & GitHub
 
@@ -103,6 +105,22 @@ Every practical experiment folder is self-contained with its source code (`HTML5
 │   │   ├── script.js
 │   │   ├── style.css
 │   │   └── Screenshot 2026-09-07 222055.png
+│   └── README.md
+├── EXP8/
+│   ├── Casestudy/
+│   │   ├── index.html
+│   │   ├── script.js
+│   │   └── style.css
+│   ├── index.html
+│   ├── Screenshot 2026-09-16 225502.png
+│   ├── Screenshot 2026-09-16 225517.png
+│   └── README.md
+├── EXP9/
+│   ├── Casestudy/
+│   │   └── index.html
+│   ├── index.html
+│   ├── Screenshot 2026-09-16 225126.png
+│   ├── Screenshot 2026-09-16 225151.png
 │   └── README.md
 └── README.md
 ```
