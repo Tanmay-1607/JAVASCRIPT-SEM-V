@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Music Concert Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>Live Music Concert</h1>
+        <p class="subtitle">Online Event Registration Form</p>
+
+        <form id="concertForm">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" placeholder="Enter phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age *</label>
+                    <input type="number" id="age" min="13" max="100"
+                        placeholder="Enter your age">
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City *</label>
+                    <input type="text" id="city" placeholder="Enter your city">
+                </div>
+
+                <div class="form-group">
+                    <label for="genre">Favorite Music Genre *</label>
+                    <select id="genre">
+                        <option value="">Select Genre</option>
+                        <option>Pop</option>
+                        <option>Rock</option>
+                        <option>Classical</option>
+                        <option>EDM</option>
+                        <option>Hip-Hop</option>
+                        <option>Bollywood</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Concert Date *</label>
+                    <input type="date" id="date">
+                </div>
+
+                <div class="form-group">
+                    <label for="tickets">Number of Tickets *</label>
+                    <select id="tickets">
+                        <option value="">Select Tickets</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <fieldset>
+
+                <legend>Preferred Session *</legend>
+
+                <label class="radio">
+                    <input type="radio" name="session" value="Afternoon">
+                    Afternoon
+                </label>
+
+                <label class="radio">
+                    <input type="radio" name="session" value="Evening">
+                    Evening
+                </label>
+
+            </fieldset>
+
+            <div class="form-group">
+
+                <label for="message">
+                    Song Request / Message
+                </label>
+
+                <textarea id="message" rows="4"
+                    placeholder="Enter your song request"></textarea>
+
+            </div>
+
+            <label class="checkbox">
+
+                <input type="checkbox" id="terms">
+
+                I agree to the event registration terms.
+
+            </label>
+
+            <div class="buttons">
+
+                <button type="submit">
+                    Register Now
+                </button>
+
+                <button type="button" id="saveLocal">
+                    Save Local
+                </button>
+
+                <button type="button" id="saveSession">
+                    Save Session
+                </button>
+
+                <button type="button" id="loadData">
+                    Load Data
+                </button>
+
+                <button type="button" id="clearData">
+                    Clear Data
+                </button>
+
+                <button type="reset" id="resetBtn">
+                    Reset Form
+                </button>
+
+            </div>
+
+            <p id="result"></p>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

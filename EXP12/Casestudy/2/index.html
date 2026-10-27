@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandhan Store | Premium Online Rakhi & Festive Hampers</title>
+  <meta name="description" content="Discover exquisite handcrafted rakhis, sterling silver bracelets, kundan rakhis, and luxury gift hampers. Fast delivery worldwide with free roli-chawal.">
+  
+  <!-- Google Fonts for Luxury Festive Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="container announcement-content">
+      <span>✨ <strong>Rakhi Mahotsav 2026:</strong> Use code <mark>FESTIVE25</mark> for Flat 25% Off | Free Roli, Chawal & Greeting Card with Every Rakhi 🪔</span>
+      <div class="top-links">
+        <a href="#track"><i class="fa-solid fa-truck-fast"></i> Track Order</a>
+        <a href="#help"><i class="fa-solid fa-headset"></i> 24x7 Support</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo-wrapper">
+        <a href="#" class="brand-logo">
+          <div class="logo-icon">🪔</div>
+          <div class="logo-text">
+            <span class="logo-title">BANDHAN</span>
+            <span class="logo-sub">PREMIUM RAKHI STORE</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#collections" class="nav-link">Collections</a>
+        <a href="#bestsellers" class="nav-link">Bestsellers</a>
+        <a href="#hampers" class="nav-link">Gift Hampers</a>
+        <a href="#promise" class="nav-link">Our Promise</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn search-trigger" aria-label="Search" title="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="icon-btn" id="wishlistBtn" aria-label="Wishlist" title="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge" id="wishlistCount">0</span>
+        </button>
+        <button class="icon-btn cart-btn" id="cartToggleBtn" aria-label="Cart" title="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-award"></i> Handcrafted With Sibling Love
+        </div>
+        <h1 class="hero-heading">Celebrate The Sacred Bond of <span>Protection & Joy</span></h1>
+        <p class="hero-description">
+          Honour timeless traditions with our artisanal Kundan, 925 Sterling Silver, and royal Zardozi Rakhis. Paired with auspicious Roli-Akshat and handcrafted sweet hampers.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#collections" class="btn btn-primary">
+            <span>Explore Collection</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#hampers" class="btn btn-secondary">
+            <i class="fa-solid fa-gift"></i> <span>Gourmet Hampers</span>
+          </a>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">50,000+</span>
+            <span class="stat-label">Happy Siblings</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Skin Safe Threads</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">Global</span>
+            <span class="stat-label">Express Delivery</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-featured-card">
+        <div class="card-glow"></div>
+        <div class="featured-media">
+          <img src="images/rakhi1.jpg" alt="Royal Zardozi Designer Rakhi" class="featured-img" id="heroImage">
+          <span class="featured-ribbon">Bestseller of 2026</span>
+        </div>
+        <div class="featured-info">
+          <h3>Royal Zardozi Rudraksha Rakhi</h3>
+          <p>Hand-embroidered pure gold bullion thread with auspicious holy Rudraksha</p>
+          <div class="price-row">
+            <span class="current-price">₹499</span>
+            <span class="original-price">₹899</span>
+            <span class="discount-pill">45% OFF</span>
+          </div>
+          <button class="btn btn-primary btn-block quick-add-btn" onclick="addToCart(1)">
+            <i class="fa-solid fa-cart-plus"></i> Add To Festive Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Propositions Banner -->
+  <section class="perks-strip">
+    <div class="container perks-grid">
+      <div class="perk-box">
+        <div class="perk-icon"><i class="fa-solid fa-box-open"></i></div>
+        <div class="perk-text">
+          <h4>Free Roli & Chawal</h4>
+          <p>Complimentary festive tika kit included with every Rakhi</p>
+        </div>
+      </div>
+      <div class="perk-box">
+        <div class="perk-icon"><i class="fa-solid fa-truck-fast"></i></div>
+        <div class="perk-text">
+          <h4>Guaranteed Delivery</h4>
+          <p>On-time before Raksha Bandhan across India & overseas</p>
+        </div>
+      </div>
+      <div class="perk-box">
+        <div class="perk-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+        <div class="perk-text">
+          <h4>Artisan Crafted</h4>
+          <p>Crafted by traditional rural artisans using silk and brass</p>
+        </div>
+      </div>
+      <div class="perk-box">
+        <div class="perk-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="perk-text">
+          <h4>100% Safe Payment</h4>
+          <p>UPI, Credit/Debit cards & Cash on Delivery supported</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Catalog Section -->
+  <section class="products-section" id="collections">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Exquisite Handpicked Range</span>
+        <h2 class="section-title">Shop Our Festive Collections</h2>
+        <div class="title-ornament">
+          <span class="line"></span>
+          <span class="ornament-icon">❖</span>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <!-- Filter Categories -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-category="all">All Rakhis (8)</button>
+        <button class="filter-btn" data-category="designer">Designer & Zardozi</button>
+        <button class="filter-btn" data-category="silver">Pure Silver</button>
+        <button class="filter-btn" data-category="kundan">Royal Kundan</button>
+        <button class="filter-btn" data-category="hamper">Gift Hampers</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="product-grid" id="productGrid">
+        <!-- Products will be dynamically populated / rendered via JavaScript for full interactivity -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Spotlight Feature / Gift Hampers -->
+  <section class="hampers-banner-section" id="hampers">
+    <div class="container hamper-flex">
+      <div class="hamper-image-box">
+        <img src="images/rakhi4.jpg" alt="Royal Rakhi & Kaju Katli Gift Hamper" class="hamper-img">
+        <div class="hamper-tag">Luxury Edition</div>
+      </div>
+      <div class="hamper-content">
+        <span class="section-subtitle">A Grand Celebration For Bhaiya & Bhabhi</span>
+        <h2 class="section-title">The Royal Shahi Celebration Hamper</h2>
+        <p class="hamper-desc">
+          Make this festival unforgettable even from miles away. Packed in an antique gold-embossed velvet box, featuring premium California almonds, jumbo roasted cashews, fresh silver-leaf Kaju Katli sweets, a designer Rakhi pair, and sterling brass pooja katoris.
+        </p>
+        <ul class="hamper-list">
+          <li><i class="fa-solid fa-circle-check"></i> 1x Handcrafted Royal Zardozi Rakhi with Rudraksha</li>
+          <li><i class="fa-solid fa-circle-check"></i> 200g Authentic Haldiram Silver Coated Kaju Katli</li>
+          <li><i class="fa-solid fa-circle-check"></i> 200g Premium Crunchy Roasted Almonds & Cashews</li>
+          <li><i class="fa-solid fa-circle-check"></i> Silver Plated Roli-Chawal Thali & Greeting Card</li>
+        </ul>
+        <div class="hamper-price-cta">
+          <div class="price-wrap">
+            <span class="hamper-price">₹1,299</span>
+            <span class="hamper-orig">₹1,999</span>
+            <span class="hamper-save">Save ₹700</span>
+          </div>
+          <button class="btn btn-primary" onclick="addToCart(4)">
+            <i class="fa-solid fa-cart-shopping"></i> Order Festive Hamper
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us / The Rakhi Promise -->
+  <section class="promise-section" id="promise">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Pure Traditions, Pure Trust</span>
+        <h2 class="section-title">The Bandhan Promise</h2>
+        <div class="title-ornament">
+          <span class="line"></span>
+          <span class="ornament-icon">❖</span>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <div class="promise-grid">
+        <div class="promise-card">
+          <div class="promise-number">01</div>
+          <h3>Skin-Friendly Pure Silk</h3>
+          <p>We use hypoallergenic, soft spun organic cotton and Resham threads that are gentle on your brother's wrist for all-day comfort.</p>
+        </div>
+        <div class="promise-card highlight">
+          <div class="promise-number">02</div>
+          <h3>Free Personalized Greeting</h3>
+          <p>Pour your heart out! Type a customized heartfelt emotional note at checkout and we'll print it on our royal floral greeting card.</p>
+        </div>
+        <div class="promise-card">
+          <div class="promise-number">03</div>
+          <h3>Express Global Courier</h3>
+          <p>Sending love overseas? We deliver directly to the USA, Canada, UK, Australia, UAE and 80+ countries with express tracking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews / Testimonials -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Loved by Sisters & Brothers Across the Globe</span>
+        <h2 class="section-title">Sibling Stories</h2>
+        <div class="title-ornament">
+          <span class="line"></span>
+          <span class="ornament-icon">❖</span>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"I sent the Evil Eye Silver Bracelet Rakhi to my brother in London. The finishing was stunning and delivery arrived 2 days before Rakhi. He loved the premium feel!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">PS</div>
+            <div class="reviewer-info">
+              <h5>Pooja Sharma</h5>
+              <span>New Delhi, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The Royal Kundan rakhi is even more breathtaking in person than in the photo. The packaging with roli-chawal containers was so thoughtful and authentic."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">AK</div>
+            <div class="reviewer-info">
+              <h5>Ananya Kapoor</h5>
+              <span>Bangalore, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Ordered the dry fruit gift hamper. Fresh sweets, crisp cashews, and the zardozi thread was so intricate. Best online Rakhi shopping experience hands down!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">RM</div>
+            <div class="reviewer-info">
+              <h5>Rohit Mehra</h5>
+              <span>Mumbai, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter / Early Bird Offers -->
+  <section class="newsletter-section">
+    <div class="container text-center">
+      <h3 class="newsletter-title">Get Early Access to New Rakhi Drops & Extra 10% Off</h3>
+      <p class="newsletter-desc">Subscribe to receive festive promo codes, personalized gifting reminders and shipping updates.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed! Check your inbox for 10% off coupon code.');">
+        <input type="email" placeholder="Enter your email address..." required>
+        <button type="submit" class="btn btn-primary">Subscribe Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <div class="logo-wrapper">
+          <div class="logo-icon">🪔</div>
+          <div class="logo-text">
+            <span class="logo-title">BANDHAN</span>
+            <span class="logo-sub">PREMIUM RAKHI STORE</span>
+          </div>
+        </div>
+        <p class="footer-about">
+          Your one-stop destination for authentic, festive, and handcrafted Rakhis. Celebrating the divine bond of siblings with elegance, purity, and global love.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Popular Categories</h4>
+        <ul>
+          <li><a href="#collections">Traditional Zardozi</a></li>
+          <li><a href="#collections">925 Silver Rakhis</a></li>
+          <li><a href="#collections">Meenakari Kundan</a></li>
+          <li><a href="#collections">Bhaiya Bhabhi Lumba</a></li>
+          <li><a href="#collections">Personalized Photo Rakhi</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Customer Support</h4>
+        <ul>
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Returns & Exchanges</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact & Hours</h4>
+        <p><i class="fa-solid fa-location-dot"></i> 402 Heritage Craft Lane, Jaipur, Rajasthan 302001</p>
+        <p><i class="fa-solid fa-envelope"></i> care@bandhanrakhi.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+        <p class="safe-badge"><i class="fa-solid fa-shield-check"></i> 100% Verified Secure Checkout</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Bandhan Online Rakhi Store. All Rights Reserved. Crafted for Lab Case Study Assignment.</p>
+        <div class="payment-methods">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-solid fa-indian-rupee-sign"></i> UPI
+          <i class="fa-solid fa-truck"></i> COD
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-Over Shopping Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <div class="cart-title">
+        <i class="fa-solid fa-bag-shopping"></i> Your Festive Cart (<span id="cartItemCount">0</span>)
+      </div>
+      <button class="close-drawer-btn" id="closeCartBtn" aria-label="Close cart">&times;</button>
+    </div>
+
+    <!-- Free Delivery Progress Bar -->
+    <div class="delivery-progress">
+      <p id="deliveryMsg">Add ₹500 more for <strong>FREE Express Shipping</strong>!</p>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill" style="width: 30%;"></div>
+      </div>
+    </div>
+
+    <div class="cart-items" id="cartItemsList">
+      <!-- Items dynamically populated via JS -->
+      <div class="empty-cart-state">
+        <i class="fa-solid fa-basket-shopping"></i>
+        <p>Your cart is empty!</p>
+        <a href="#collections" class="btn btn-secondary" onclick="toggleCart(false)">Start Shopping</a>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-summary-line">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">₹0</span>
+      </div>
+      <div class="cart-summary-line">
+        <span>Festive Roli Chawal Kit</span>
+        <span class="free-tag">FREE</span>
+      </div>
+      <div class="cart-summary-line total-line">
+        <span>Total Payable</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+
+      <button class="btn btn-primary btn-block checkout-btn" onclick="handleCheckout()">
+        Proceed To Checkout <i class="fa-solid fa-arrow-right"></i>
+      </button>
+      <p class="cart-secure-text"><i class="fa-solid fa-lock"></i> Encrypted 256-Bit SSL Checkout</p>
+    </div>
+  </aside>
+
+  <!-- Quick View Product Modal -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModalBtn">&times;</button>
+      <div class="modal-content" id="modalContent">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast" id="toastNotification">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMsg">Product added to cart!</span>
+  </div>
+
+  <!-- Javascript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>

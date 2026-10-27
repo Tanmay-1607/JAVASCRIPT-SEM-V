@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 34px;
+    color: #1d4ed8;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #64748b;
+}
+
+.timer-card,
+.form-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 22px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.08);
+}
+
+.timer-card {
+    text-align: center;
+}
+
+.timer-card h2,
+.form-card h2 {
+    margin-bottom: 12px;
+}
+
+#eventDate {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.time-box {
+    background: #eff6ff;
+    padding: 22px 8px;
+    border-radius: 12px;
+}
+
+.time-box span {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.time-box small {
+    display: block;
+    margin-top: 8px;
+    color: #475569;
+}
+
+#status {
+    margin-top: 25px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+label {
+    display: block;
+    margin: 18px 0 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 13px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+footer {
+    text-align: center;
+    color: #64748b;
+    padding: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .timer-card,
+    .form-card {
+        padding: 20px;
+    }
+
+    .countdown {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .time-box span {
+        font-size: 28px;
+    }
+}

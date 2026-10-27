@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Order Dashboard</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .summary {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #eef2ff;
+            border-radius: 6px;
+            font-size: 18px;
+        }
+
+        #message {
+            text-align: center;
+            color: red;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Online Food Order Dashboard</h1>
+
+    <div class="btn-container">
+        <button id="viewOrders">View Orders</button>
+    </div>
+
+    <div id="message"></div>
+
+    <table id="ordersTable">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Customer Name</th>
+                <th>Food Item</th>
+                <th>Quantity</th>
+                <th>Total Amount</th>
+                <th>Order Status</th>
+            </tr>
+        </thead>
+
+        <tbody id="orderBody">
+        </tbody>
+    </table>
+
+    <div class="summary">
+        <p>Total Number of Orders: <strong id="totalOrders">0</strong></p>
+        <p>Total Sales Amount: ₹<strong id="totalSales">0.00</strong></p>
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function() {
+
+        $("#viewOrders").click(function() {
+
+            $("#orderBody").empty();
+            $("#message").text("");
+
+            $.getJSON("orders.json")
+
+                .done(function(data) {
+
+                    let totalOrders = 0;
+                    let totalSales = 0;
+
+                    $.each(data, function(index, order) {
+
+                        let row = `
+                            <tr>
+                                <td>${order.orderId}</td>
+                                <td>${order.customerName}</td>
+                                <td>${order.foodItem}</td>
+                                <td>${order.quantity}</td>
+                                <td>₹${parseFloat(order.totalAmount).toFixed(2)}</td>
+                                <td>${order.orderStatus}</td>
+                            </tr>
+                        `;
+
+                        $("#orderBody").append(row);
+
+                        totalOrders++;
+                        totalSales += parseFloat(order.totalAmount);
+                    });
+
+                    $("#totalOrders").text(totalOrders);
+                    $("#totalSales").text(totalSales.toFixed(2));
+
+                })
+
+                .fail(function() {
+
+                    $("#orderBody").empty();
+
+                    $("#totalOrders").text("0");
+                    $("#totalSales").text("0.00");
+
+                    $("#message").text(
+                        "Unable to load orders. Please make sure orders.json is available."
+                    );
+
+                });
+
+        });
+
+    });
+</script>
+
+</body>
+</html>

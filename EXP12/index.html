@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Live Task Manager</h1>
+            <p>Organize your tasks and track your progress.</p>
+        </header>
+
+        <section class="task-form">
+            <h2>Add a New Task</h2>
+
+            <form id="taskForm">
+                <input type="text" id="taskInput"
+                       placeholder="Enter your task..." required>
+
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <section class="task-section">
+            <div class="section-heading">
+                <h2>My Tasks</h2>
+                <span id="taskCount">0 tasks</span>
+            </div>
+
+            <div id="taskList">
+                <p class="empty-message">No tasks added yet.</p>
+            </div>
+        </section>
+
+        <section class="data-section">
+            <h2>AJAX Data Integration</h2>
+            <p>Load sample tasks from an external data source.</p>
+            <button type="button" id="loadTasks">Load Sample Tasks</button>
+            <p id="ajaxStatus" aria-live="polite"></p>
+        </section>
+
+        <footer>
+            <p>JavaScript Practical 12 | Live Task Manager</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

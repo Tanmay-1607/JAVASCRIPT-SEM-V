@@ -29,6 +29,9 @@ Every practical experiment folder is self-contained with its source code (`HTML5
 | **07** | **Dynamic Interactive To-Do List** | DOM Node Creation & Deletion (`createElement`, `remove`), Inline Prompts | **Comprehensive Registration Form** (`focus`, `change`, `submit` Event Handlers) | [View EXP7 README](EXP7/README.md) |
 | **08** | **Gym Admission Form & Product Filter** | Interactive Real-Time Validation (`input`, `blur`, `change`, `submit`), RegExp Patterns | **E-Commerce Product Filter** (Array Filtering, Dynamic Card Grid, Search Sanitization) | [View EXP8 README](EXP8/README.md) |
 | **09** | **Theme-Responsive Admission Portal** | Web Storage API (`localStorage`, `sessionStorage`), Persistent Dark Mode, FOUC Prevention, Draft Auto-Save | **Seminar Schedule Planner** (HTML Table Spans, Dynamic Topic Selection, Storage Reset) | [View EXP9 README](EXP9/README.md) |
+| **10** | **JSON Data Processing & Fetch API** | JSON Serialization (`JSON.stringify`, `JSON.parse`), DOM Table Rendering, Fetch API, Promise Chaining | **Online Food Order Dashboard & Workshop Booking** (jQuery `$.getJSON`, Aggregate Sales, Web Storage Sync) | [EXP10 - Experiment 10](./EXP10/README.md) |
+| **11** | **Class Countdown Scheduler** | ES6 Modules (`import`, `export`), Date & Time API, Asynchronous Timers (`setInterval`, `clearInterval`), Two-Digit Padding | — | [EXP11 - Experiment 11](./EXP11/README.md) |
+| **12** | **Live Task Manager with AJAX Integration** | jQuery DOM Operations, Web Storage Sync (`localStorage`), REST API (`$.ajax`), Array Methods (`filter`, `some`) | **Smart India Hackathon & Bandhan Festive E-Commerce** (Navigation Logging, Interactive Cart Drawer, Wishlist) | [EXP12 - Experiment 12](./EXP12/README.md) |
 
 ---
 
@@ -47,6 +50,9 @@ Individual, college-submission-ready A4 PDF reports generated from each experime
 | **EXP 07** | Dynamic Interactive To-Do List | [📄 Download EXP7 Report (PDF)](EXP7/README.pdf) | [View README.md](EXP7/README.md) |
 | **EXP 08** | Gym Admission Form & Product Filter | [📄 Download EXP8 Report (PDF)](EXP8/README.pdf) | [View README.md](EXP8/README.md) |
 | **EXP 09** | Theme-Responsive Admission Portal | [📄 Download EXP9 Report (PDF)](EXP9/README.pdf) | [View README.md](EXP9/README.md) |
+| **EXP 10** | JSON Data Processing & Fetch API | [📄 Download EXP10 Report (PDF)](EXP10/README.pdf) | [EXP10 - Experiment 10](./EXP10/README.md) |
+| **EXP 11** | Class Countdown Scheduler | [📄 Download EXP11 Report (PDF)](EXP11/README.pdf) | [EXP11 - Experiment 11](./EXP11/README.md) |
+| **EXP 12** | Live Task Manager with AJAX Integration | [📄 Download EXP12 Report (PDF)](EXP12/README.pdf) | [EXP12 - Experiment 12](./EXP12/README.md) |
 
 > **Note:** All PDF practical reports are compiled in standardized A4 portrait format featuring institutional headers, student credentials (Name & PRN), running footers with dynamic page numbering, syntax-highlighted code blocks, and embedded execution screenshots.
 
@@ -55,13 +61,17 @@ Individual, college-submission-ready A4 PDF reports generated from each experime
 ## Technologies & Tools Used
 
 - **Markup & Styling:** HTML5, Modern CSS3 (CSS Grid, Flexbox, Gradients, Custom Properties)
-- **Scripting Language:** Modern JavaScript (ES6+)
+- **Scripting Language:** Modern JavaScript (ES6+ with ES6 Modular Architecture)
+- **Libraries & Frameworks:** jQuery 3.7.1
 - **Core APIs & Features:**
-  - Dynamic DOM Manipulation (`document.createElement`, `appendChild`, `remove`, `innerHTML`)
+  - Dynamic DOM Manipulation (`document.createElement`, `appendChild`, `remove`, `innerHTML`, jQuery DOM tree traversal)
   - Event-Driven Programming (`addEventListener` for `click`, `input`, `change`, `focus`, `blur`, `submit`)
   - Regular Expressions (`RegExp` syntax, pattern matching, sanitization)
-  - Higher-Order Array Iterators (`map`, `filter`, `reduce`, `forEach`)
+  - Higher-Order Array Iterators (`map`, `filter`, `reduce`, `forEach`, `some`)
   - Web Storage API (`localStorage` & `sessionStorage` for persistent and session-scoped state)
+  - JSON (JavaScript Object Notation) Serialization & Parsing (`JSON.stringify`, `JSON.parse`)
+  - Asynchronous Programming & Data Ingestion (Native `fetch()` API with Promises, jQuery `$.getJSON()`, and `$.ajax()`)
+  - Temporal Mathematics & Countdown Timers (`Date`, `getTime`, `setInterval`, `clearInterval`, `padStart`)
 - **Development Environment:** Visual Studio Code / Antigravity IDE
 - **Version Control:** Git & GitHub
 
@@ -149,6 +159,66 @@ Individual, college-submission-ready A4 PDF reports generated from each experime
 │   ├── index.html
 │   ├── Screenshot 2026-09-16 225126.png
 │   ├── Screenshot 2026-09-16 225151.png
+│   ├── README.pdf
+│   └── README.md
+├── EXP10/
+│   ├── Casestudy/
+│   │   ├── 1/
+│   │   │   ├── index.html
+│   │   │   ├── script.js
+│   │   │   └── style.css
+│   │   ├── 2/
+│   │   │   ├── index.html
+│   │   │   ├── script.jss
+│   │   │   └── style.css
+│   │   ├── 3/
+│   │   │   ├── index.html
+│   │   │   └── students.json
+│   │   └── 4(JSON/
+│   │       ├── index.html
+│   │       ├── ORDERS.JSON
+│   │       └── Screenshot 2026-10-21 225236.png
+│   ├── JSON/
+│   │   ├── index.html
+│   │   ├── students.json
+│   │   └── Screenshot 2026-10-21 225452.png
+│   ├── Practice/
+│   │   ├── employees.json
+│   │   ├── index.html
+│   │   ├── script.js
+│   │   ├── style.css
+│   │   └── Screenshot 2026-10-21 225208.png
+│   ├── README.pdf
+│   └── README.md
+├── EXP11/
+│   ├── index.html
+│   ├── scheduler.js
+│   ├── script.js
+│   ├── style.css
+│   ├── Screenshot 2026-10-22 102441.png
+│   ├── README.pdf
+│   └── README.md
+├── EXP12/
+│   ├── Casestudy/
+│   │   ├── 1/
+│   │   │   ├── index.html
+│   │   │   ├── script.js
+│   │   │   ├── style.css
+│   │   │   └── Screenshot 2026-10-26 230528.png
+│   │   └── 2/
+│   │       ├── images/
+│   │       │   ├── rakhi1.jpg
+│   │       │   ├── rakhi2.jpg
+│   │       │   ├── rakhi3.jpg
+│   │       │   └── rakhi4.jpg
+│   │       ├── index.html
+│   │       ├── script.js
+│   │       ├── style.css
+│   │       └── Screenshot 2026-10-26 232611.png
+│   ├── index.html
+│   ├── script.js
+│   ├── style.css
+│   ├── Screenshot 2026-10-26 225929.png
 │   ├── README.pdf
 │   └── README.md
 └── README.md

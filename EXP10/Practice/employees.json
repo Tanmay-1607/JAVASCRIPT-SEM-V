@@ -1,0 +1,26 @@
+[
+    {
+        "employeeId": "E101",
+        "employeeName": "Sanjay",
+        "department": "CSE",
+        "salary": 45000
+    },
+    {
+        "employeeId": "E102",
+        "employeeName": "Tanmay",
+        "department": "Data Science",
+        "salary": 50000
+    },
+    {
+        "employeeId": "E103",
+        "employeeName": "Samruddhi",
+        "department": "IT",
+        "salary": 48000
+    },
+    {
+        "employeeId": "E104",
+        "employeeName": "Atharv",
+        "department": "Data Science",
+        "salary": 52000
+    }
+]

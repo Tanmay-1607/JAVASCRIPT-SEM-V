@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Sanjay",
+        "department": "CSE",
+        "marks": 80
+    },
+    {
+        "id": 2,
+        "name": "Tanmay",
+        "department": "Data Science",
+        "marks": 85
+    },
+    {
+        "id": 3,
+        "name": "Samruddhi",
+        "department": "CSE",
+        "marks": 90
+    },
+    {
+        "id": 4,
+        "name": "Atharv",
+        "department": "Data Science",
+        "marks": 75
+    }
+]
